@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uiframe snapclient="true" snapframe="true" name="sd_slayer" x="0" y="0" width="0" height="0">
+  <frame layout_gravity="right top" margin="0 365 35 0" />
+  <option visible="true" closebutton="false" alwaysVisible="true" />
+  <input hittest="true" movable="true" moveintitlebar="false" hittestframe="true" />
+  <layer layerlevel="21" />
+  <draw drawtitlebar="false" drawframe="false" />
+  <script LBtnUpScp="SD_SLAYER_ON_DRAG_END" LBtnDownScp="SD_SLAYER_ON_DRAG_START" />
+</uiframe>
