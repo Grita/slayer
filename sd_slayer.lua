@@ -90,8 +90,10 @@ function SD_SLAYER_ON_MON_ENTER(frame, msg, str, handle)
     return
   end
   
-  if GetAdventureBookInstByClassID(ABT_MON_KILL_COUNT, clsid) then
-    SD_SLAYER_ACTIVE_NPCS[clsid] = GetClassByType('Monster', clsid);
+  local npc = GetClassByType('Monster', clsid);
+  
+  if npc.Journal ~= nil and npc.Journal ~= 'None' then
+    SD_SLAYER_ACTIVE_NPCS[clsid] = npc;
   else
     SD_SLAYER_SKIPPED_NPCS[clsid] = true;
   end
